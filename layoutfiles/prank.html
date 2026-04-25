@@ -1,0 +1,135 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Prank</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      overflow: hidden;
+    }
+
+    .box {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #yesBtn {
+      background: #28a745;
+      color: white;
+      margin-right: 20px;
+    }
+
+    #noBtn {
+      background: #dc3545;
+      color: white;
+      position: absolute;
+    }
+
+    /* Heart */
+    .heart {
+      width: 100px;
+      height: 90px;
+      position: relative;
+      transform: rotate(-45deg);
+      animation: beat 1s infinite;
+      margin: auto;
+    }
+
+    .heart:before,
+    .heart:after {
+      content: "";
+      width: 100px;
+      height: 90px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart:before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart:after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1) rotate(-45deg); }
+      50% { transform: scale(1.2) rotate(-45deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="box">
+    <h2 id="question">Do you love me? 💕</h2>
+
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+<script>
+  const noBtn = document.getElementById("noBtn");
+  const box = document.getElementById("box");
+  const yesBtn = document.getElementById("yesBtn");
+  const question = document.getElementById("question");
+
+  // Move NO button randomly
+  noBtn.addEventListener("mouseover", () => {
+    const boxWidth = box.offsetWidth - noBtn.offsetWidth;
+    const boxHeight = box.offsetHeight - noBtn.offsetHeight;
+
+    const x = Math.random() * boxWidth;
+    const y = Math.random() * boxHeight;
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  });
+
+  // YES button click
+  yesBtn.addEventListener("click", () => {
+    box.innerHTML = `
+      <h2>I knew it! ❤️</h2>
+      <div class="heart"></div>
+    `;
+  });
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
